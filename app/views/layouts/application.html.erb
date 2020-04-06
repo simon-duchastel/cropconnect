@@ -11,15 +11,18 @@
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
-    
+  <header class="app_header">
+    <%= render 'layouts/header' %>
+  </header>
+
+  <body>  
     <main role="main">
       <%= content_for?(:content) ? yield(:content) : yield %>
     </main>
   </body>
 
 
-  <footer>
+  <footer class="app_footer">
       <%= render 'layouts/footer' %>
   </footer>
 

@@ -4,7 +4,20 @@
 $white: white;
 $black: black;
 $green: green;
+$very_light_green: #ebfff4;
 
+.app_footer {
+        background: $very_light_green;
+}
+.app_header {
+        background: $very_light_green;
+}
+.header_link {
+        float: right;
+        padding: 8px;
+        font-size: large;
+        vertical-align:middle;
+}
 .navbar {
         margin-bottom: 0;
         background: $black;
@@ -66,6 +79,9 @@ img,
 video,
 audio {
         margin-top: 20px;
+        margin-left: 8px;
+        margin-right: 8px;
+        margin-bottom: 8px;
         max-width: 80%;
 }
 caption {
