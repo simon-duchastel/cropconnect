@@ -1,0 +1,18 @@
+<h1>Current Tasks</h1>
+ 
+<table>
+  <tr>
+    <th>Task Name</th>
+    <th>When</th>
+    <th>Task Description</th>
+    <th></th>
+  </tr>
+ 
+  <% @tasks.each do |task| %>
+    <tr>
+      <td><%= task.taskname %></td>
+      <td><%= task.taskdates %></td>
+      <td><%= task.taskdescription%></td>
+    </tr>
+  <% end %>
+</table>

@@ -1,19 +1,30 @@
-<h1>New Farmer Account</h1>
+<h1>Task Form</h1>
 
-<%= form_with scope: :farmer, url: farmers_path, local: true do |form| %>
+<%= form_with scope: :farmer_task, url: farmers_path, local: true do |form| %>
+
+  <p>
+    <%= form.label "Name of the Task" %><br>
+    <%= form.text_field :taskname %>
+  </p>
+
   <p>
     <%= form.label :firstname %><br>
     <%= form.text_field :firstname %>
   </p>
-   
+
   <p>
     <%= form.label :surname %><br>
     <%= form.text_field :surname %>
   </p>
    
   <p>
-    <%= form.label :birthdate %><br>
-    <%= form.date_field :birthdate %>
+    <%= form.label :email %><br>
+    <%= form.email_field :email %>
+  </p>
+
+  <p>
+    <%= form.label "When" %><br>
+    <%= form.text_field :taskdates %>
   </p>
    
   <p>
@@ -22,16 +33,10 @@
   </p>
    
   <p>
-    <%= form.label :email %><br>
-    <%= form.email_field :email %>
+    <%= form.label "Task Description" %><br>
+    <%= form.text_area :taskdescription %>
   </p>
-   
-  <p>
-    <%= form.label :telephone %><br>
-    <%= form.text_field :telephone %>
-  </p>
-   
-  <p>
-    <%= form.submit "Create Account", :class => 'linkbutton'%>
+
+    <%= form.submit "Create Task", :class => 'linkbutton'%>
   </p>
 <% end %>

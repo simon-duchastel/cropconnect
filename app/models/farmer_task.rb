@@ -1,0 +1,2 @@
+class FarmerTask < ApplicationRecord
+end
