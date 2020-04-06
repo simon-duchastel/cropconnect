@@ -1,42 +1,46 @@
-<h1>Task Form</h1>
+<div class="content">
 
-<%= form_with scope: :farmer_task, url: farmers_path, local: true do |form| %>
+  <h1>Task Form</h1>
 
-  <p>
-    <%= form.label "Name of the Task" %><br>
-    <%= form.text_field :taskname %>
-  </p>
+  <%= form_with scope: :farmer_task, url: farmers_path, local: true do |form| %>
 
-  <p>
-    <%= form.label :firstname %><br>
-    <%= form.text_field :firstname %>
-  </p>
+    <p>
+      <%= form.label "Name of the Task" %><br>
+      <%= form.text_field :taskname %>
+    </p>
 
-  <p>
-    <%= form.label :surname %><br>
-    <%= form.text_field :surname %>
-  </p>
-   
-  <p>
-    <%= form.label :email %><br>
-    <%= form.email_field :email %>
-  </p>
+    <p>
+      <%= form.label :firstname %><br>
+      <%= form.text_field :firstname %>
+    </p>
 
-  <p>
-    <%= form.label "When" %><br>
-    <%= form.text_field :taskdates %>
-  </p>
-   
-  <p>
-    <%= form.label "Farm Address" %><br>
-    <%= form.text_field :address %>
-  </p>
-   
-  <p>
-    <%= form.label "Task Description" %><br>
-    <%= form.text_area :taskdescription %>
-  </p>
+    <p>
+      <%= form.label :surname %><br>
+      <%= form.text_field :surname %>
+    </p>
+    
+    <p>
+      <%= form.label :email %><br>
+      <%= form.email_field :email %>
+    </p>
 
-    <%= form.submit "Create Task", :class => 'linkbutton'%>
-  </p>
-<% end %>
+    <p>
+      <%= form.label "When" %><br>
+      <%= form.text_field :taskdates %>
+    </p>
+    
+    <p>
+      <%= form.label "Farm Address" %><br>
+      <%= form.text_field :address %>
+    </p>
+    
+    <p>
+      <%= form.label "Task Description" %><br>
+      <%= form.text_area :taskdescription %>
+    </p>
+
+      <%= form.submit "Create Task", :class => 'linkbutton'%>
+    </p>
+  <% end %>
+
+</div>
